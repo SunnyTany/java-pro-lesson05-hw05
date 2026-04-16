@@ -1,8 +1,8 @@
 package app;
 
-import static app.Constants.DELIVERY_PRICE;
+public class CalcCostDelivery extends CalcCostBase {
+    private final static double DELIVERY_PRICE = 7.0;
 
-public class CalсCostDelivery extends CalcCostBase {
     @Override
     public double calcCost(Product product) {
         return super.calcCost(product) + DELIVERY_PRICE;

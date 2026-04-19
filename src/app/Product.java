@@ -25,8 +25,18 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product: " + name +
-                ", quota is " + quota + " " + Constants.MEASURE +
-                ", price is " + Constants.CURRENCY + " " + price + ".";
+        return new StringBuilder()
+                .append("Product: ")
+                .append(name)
+                .append(", quota is ")
+                .append(quota)
+                .append(" ")
+                .append(Constants.MEASURE)
+                .append(", price is ")
+                .append(Constants.CURRENCY)
+                .append(" ")
+                .append(price)
+                .append(".")
+                .toString();
     }
 }

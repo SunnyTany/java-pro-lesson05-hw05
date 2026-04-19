@@ -2,7 +2,7 @@ package app;
 
 public class Main {
     public static void main(String[] args) {
-        String[] data = Constants.getData();
+        String[] data = getData();
         Product product = new Product(data[0],
                 Integer.parseInt(data[1]),
                 Double.parseDouble(data[2]));
@@ -22,5 +22,9 @@ public class Main {
 
     public static void getOutput(String output) {
         System.out.println(output);
+    }
+
+    public static String[] getData() {
+        return new String[] {"abc", "5", "2.5"};
     }
 }
